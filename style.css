@@ -1,0 +1,106 @@
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    height: 80px;
+}
+
+.caja nav {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #9f9f9f;
+    text-decoration: none;
+}
+
+.principal {
+    width: 300px;
+    height: 700px;
+}
+.principal img{
+   width: 500%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.contenedor {
+    position: absolute; /* se establece la posición absoluta para el h1 */
+    bottom: 90px; /* se coloca en la esquina inferior */
+    left: 30px; /* se coloca en la esquina izquierda */
+    padding: 10px; /* se agrega un padding para que el texto no quede pegado a la imagen */
+     /* se establece el color de fondo */
+    color: white; /* se establece el color de texto */
+    opacity: 0.8; /* se establece la opacidad */
+    
+    font-weight: bolder;
+}
+.contenedor h1{
+    font-size: 50px;
+}
+.contenedor h2{
+    font-size: 30px;
+}
+.perfil {
+    background-color: #000000;
+    position: absolute;
+    width: 300px;
+    height: 700px;
+    right: 0;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen {
+    content: "";
+    display: block;
+    top: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.perfil img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nombre {
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.perfil h1 {
+    padding-top: 15px;
+    color: #ffffff;
+}
+.icono img{
+    padding-top: 20px;
+    filter: invert(100%);
+    width: 18%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
