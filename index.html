@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio</title>
+    <title>Hola Mundo</title>
     <meta name="description" content="Hoja de vida personal">
     <meta name="author" content="Andres Felipe Ocampo">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="icon" type="imagenes/png" href="imagenes/Icono.png">
 </head>
 
 <body>
@@ -19,8 +20,8 @@
                     <li><a href="#dtPersonales">Datos Personales</a></li>
                     <li><a href="#infoAcadeLabo">Información Academica</a></li>
                     <li><a href="#infoAcadeLabo">Información Laboral</a></li>
-                    <li><a href="#seccion1">Referencias</a> </li>
-                    <li><a href="#seccion1">Contacto</a> </li>
+                    <li><a href="#referencias">Referencias</a> </li>
+                    <li><a href="#contacto">Contacto</a> </li>
                 </ul>
             </nav>
         </div>
@@ -35,14 +36,17 @@
             </div>
             <div class="perfil">
                 <img class="imagen" src="imagenes/fotoPerfil.jpg">
-                <div class="nombre">Andres Felipe Ocampo</div>
-                <h1>Estudiante De Ingeniería de Sistemas</h1>
-                <h1>Universidad Del Cauca</h1>
+                <p class="nombre">Andres Felipe Ocampo</p>
                 <div>
+                    
+                    <h1>Estudiante De Ingeniería de Sistemas</h1>
+                    <h1>Universidad Del Cauca</h1>
+                </div>
+                <br>
+                <div >
                     <h1>anocampo@unicauca.edu.co</h1>
                     <h1>Tel: 3114235725</h1>
                 </div>
-
                 <nav>
                     <ul>
                         <li class="icono"><a href="https://github.com/AndresFelipeO" target="_blank"><img
@@ -77,8 +81,8 @@
             <img src="/imagenes/coding.png" alt="">
         </section>
         <section id="infoAcadeLabo" class="informacionAcadeLabo">
-            <div  class="titulosPrincipales">
-                <h1>Informacion Academica</h1>
+            <div class="titulosPrincipales">
+                <h1>Información Academica</h1>
                 <ol>
                     <h2>Pregrado/Universidad</h2>
                     <p>Universidad del cauca</p>
@@ -88,7 +92,7 @@
                 <ol>
                     <h2>ONE-Oracle Next Education y Alura Latam</h2>
                     <p>Curso Virtual</p>
-                    <li>ava Orientado A Objetos</li>
+                    <li>Java Orientado A Objetos</li>
                     <li>Febrero de 2023 - Marzo de 2023</li>
                 </ol>
                 <ol>
@@ -103,24 +107,72 @@
                     <li>Programa de Formación habilidades de programación</li>
                     <li>Abril 2021- Octubre del 2021</li>
                 </ol>
-                
+
             </div>
-            <div  class="titulosPrincipales">
-                <h1>Informacion Laboral</h1>
+            <div class="titulosPrincipales">
+                <h1>Información Laboral</h1>
                 <p>No tengo :(</p>
             </div>
         </section>
         <section>
-            
-            
         </section>
-        <section id="referencias">
-            <h1>Referencias</h1>
+        <section id="referencias" class="referenciasPersonales">
+            <div class="titulosPrincipales">
+                <h1>Referencias</h1>
+                <ol>
+                    <h2>Daniel Santiago Rodrigez</h2>
+                    <p>Estudiante Ingeniería De Sistemas</p>
+                    <li>Telefono:+57 3146538089</li>
+                    <li>dasamunoz@unicauca.edu.co</li>
+                </ol>
+                <ol>
+                    <h2>Carolina Solarte Lopez</h2>
+                    <p>Estudiante Ingeniería De Sistemas</p>
+                    <li>Telefono:+57 3226148679</li>
+                    <li>carsolarte@unicauca.edu.co</li>
+                </ol>
+                <ol>
+                    <h2>Andres Felipe Herrera</h2>
+                    <p>Estudiante Ingeniería De Sistemas</p>
+                    <li>Telefono:+57 3245707916</li>
+                    <li>carsolarte@unicauca.edu.co</li>
+                </ol>
+            </div>
+
         </section>
-        <section>
-            <h1>Contacto</h1>
+        <section id="contacto" class="contactoPersonal">
+            <div class="titulosPrincipales">
+                <h1>Contacto</h1>
+                <form>
+                    <label for="nombreApellido">Nombre y apellido </label>
+                    <input type="text" id="nombreApellido" class="inputPadron" required>
+                    <label for="correoElectronico">Correo Electrónico</label>
+                    <input type="email" id="correoElectronico" class="inputPadron" required
+                        placeholder="email@dominio.com">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" class="inputPadron" required placeholder="xxx xxx xxxx">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="" id="mensaje" cols="70" rows="10" required></textarea>
+                    <fieldset>
+                        <legend>¿Como le gustaria que nos contectemos?</legend>
+                        <label for="radioEmail"> <input type="radio" id="radioEmail" name="contacto">Email</label>
+
+                        <label for="radioTelefono"><input type="radio" id="radioTelefono"
+                                name="contacto">teléfono</label>
+
+                        <label for="radioWhatsapp"><input type="radio" id="radioWhatsapp" name="contacto"
+                                checked>Whatsapp</label>
+                    </fieldset>
+                    <input type="submit" value="Enviar formulario" class="enviar">
+                </form>
+            </div>
+
         </section>
     </main>
+    <footer>
+        <img src="imagenes/Icono.png">
+        <p class="copyright">&copy Copyright AndresFelipeO - 2023</p>
+    </footer>
 </body>
 
 </html>
